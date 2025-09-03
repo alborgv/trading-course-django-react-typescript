@@ -1,11 +1,10 @@
-// TradingViewWidget.jsx
 import { useEffect, useRef, memo } from 'react';
 
 function TradingViewWidget() {
-  const container = useRef();
+  const container = useRef<HTMLDivElement>(null);
 
-  useEffect(
-    () => {
+  useEffect(() => {
+      if (!container.current) return;
       const script = document.createElement("script");
       script.src = "https://s3.tradingview.com/external-embedding/embed-widget-ticker-tape.js";
       script.type = "text/javascript";
