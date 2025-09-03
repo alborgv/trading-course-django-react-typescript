@@ -1,0 +1,25 @@
+import { FaXTwitter, FaDiscord, FaInstagram } from "react-icons/fa6";
+
+export default function Footer() {
+    return (
+        <>
+            <div className="bg-primary">
+
+                <div className="flex justify-between items-center pt-8 pb-6 px-8 md:px-24">
+                    <div className="flex space-x-4">
+                        <FaXTwitter className="text-2xl text-primaryText hover:text-[#14171A] cursor-pointer " />
+                        <FaDiscord className="text-2xl text-primaryText hover:text-[#7289da] cursor-pointer " />
+                        <FaInstagram className="text-2xl text-primaryText hover:text-[#E1306C] cursor-pointer " />
+                    </div>
+                    <div className="flex flex-col md:flex-row md:space-x-4 space-y-2 md:space-y-0 text-white text-sm">
+                        <span className="hover:text-primaryText hover:underline cursor-pointer">Términos y condiciones</span>
+                        <span className="hover:text-primaryText hover:underline cursor-pointer">Política de privacidad</span>
+                    </div>
+                </div>
+                <div className="flex justify-center pt-2 pb-4">
+                    <span className="text-gray-400 text-sm">&copy; Copyright 2025 | All rights reserved</span>
+                </div>
+            </div>
+        </>
+    );
+}
