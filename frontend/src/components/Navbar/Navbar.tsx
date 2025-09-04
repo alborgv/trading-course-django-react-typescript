@@ -19,10 +19,7 @@ export default function Navbar() {
                         <Link to="/course" className="hover:text-primaryText">Course</Link>
                     </li>
                     <li>
-                        <Link to="/" className="hover:text-primaryText">Get Started</Link>
-                    </li>
-                    <li>
-                        <Link to="/" className="hover:text-primaryText">Login</Link>
+                        <Link to="/login" className="text-primaryText hover:text-primaryTextHover">Login</Link>
                     </li>
                 </ul>
             </div>
